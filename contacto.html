@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="icon" href="./assets/img/favicon-48x48.png">
+</head>
+<body>
+    <h1>Contáctanos en TechNova</h1>
+    <form action="mailto:manuelmarcotecodesido@gmail.com" method="post" enctype="text/plain">
+        <fieldset>
+            <legend>Datos personales</legend>
+
+            <label for="nombre">Nombre*</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellidos">Apellidos*</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+
+            <label for="correo">Correo electrónico*</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="telefono">Número de teléfono*</label>
+            <input type="number" name="telefono" id="telefono" required>
+
+            <label for="observaciones">Observaciones</label>
+            <textarea name="observaciones" id="observaciones" cols="50" rows="10"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Método de contacto</legend>
+            <label for="">
+                <input type="radio" name="contacto" value="correo">
+                Correo electrónico
+            </label>
+
+            <label for="">
+                <input type="radio" name="contacto" value="telefono">
+                Número de teléfono
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <input type="reset" value="Enviar" class="pointer">
+            <input type="submit" value="Borrar" class="pointer">
+        </fieldset>
+
+
+
+    </form>
+    
+</body>
+</html>
