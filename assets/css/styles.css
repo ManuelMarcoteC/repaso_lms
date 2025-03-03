@@ -1,0 +1,242 @@
+/*reset básico: obligatorio al inicio*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'space-grotesk';
+    src: url(../fonts/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf);
+    font-size: 14px;
+}
+
+@font-face {
+    font-family: 'vt323';
+    src: url(../fonts/VT323-Regular.ttf);
+    font-size: 14px;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/VT323-Regular.ttf);
+}
+
+body {
+    font-family: roboto;
+    font-size: 14px;
+    color: lightsteelblue;
+
+    background-image:url(../img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    background-attachment: fixed;
+}
+
+#index-body {
+    font-family:space-grotesk;
+    font-size: 3rem;
+    color: lightsteelblue;
+
+    
+}
+
+.tech_nova {
+    margin: auto;
+    padding-top: 2rem;
+    width: 500px;
+    display: block;
+}
+
+/*
+.index-body {
+    text-align: center;
+    padding-top: 2rem;
+}
+*/
+
+#quote {
+
+    font-size: 16px;
+    color: lightsteelblue;
+    text-shadow: -1px 0 black, 0 3px black, 1px 0 black, 0 -1px black;
+    
+    /*position:;*/
+    
+    top: 10rem;
+    
+    left: 0;
+    animation: moverDiv 10s linear infinite;
+    text-align: center;
+}
+
+/*@keyframes moverDiv {
+    0% {
+        left: 60%;
+    }
+    50% {
+        left: calc(60% - 100px)
+    }
+    100% {
+        left: 60%;
+    }
+}*/
+
+#banner_div{
+    padding: 3rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+    position: relative;
+}
+
+#banner {
+
+    /*caract. imagen*/
+    height: 300px;
+    width: 800px;
+
+    /*borde de imagen*/
+    border-style: solid;
+    border-color: darkslateblue;
+    border-width: 10px;
+    border-radius: 20px;
+
+    /*centrado de imagen*/
+    display: block;
+    margin: auto;
+    
+    
+}
+
+.texto_superpuesto {
+
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'space-grotesk';
+    text-shadow: -1px 0 black, 0 3px black, 1px 0 black, 0 -1px black;
+
+}
+
+
+/*contacto.html*/
+
+h1 {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: -1px 0 black, 0 3px black, 1px 0 black, 0 -1px black;
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.7);
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 2.5rem;
+}
+
+fieldset {
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 1.1rem;
+}
+
+legend {
+    font-size: 1.5rem;
+}
+
+input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  input[type="number"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+
+  .pointer {
+    cursor: pointer;
+  }
+
+
+  /*productos.html*/
+
+  #product-body {
+    font-family: space-grotesk;
+}
+
+table {
+    
+    width: 800px;
+    height: 600px;
+    
+    margin: auto;
+    margin-bottom: 150px;
+    
+    border: black solid 7px;
+    border-collapse: collapse;
+    
+    table-layout: fixed;
+
+    text-align: center;
+}
+
+td {
+    column-width: 800px;
+    border: 7px black solid;
+    vertical-align: bottom;
+}
+
+.producto {
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    transform: translateY(-10%) translateX(0%);
+}
+
+tr.producto {
+    height: 300px;
+}
+
+tr.con_imagen_de_fondo {
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#p1 {
+    background-image: url(../img/android-chrome-512x512.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 20px;
+}
+
+#p2 {
+    background-image: url(../img/android-chrome-512x512.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 20px;
+}
+
+#p3{
+    background-image: url(../img/android-chrome-512x512.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 20px;
+}
+
+.texto1 {
+    vertical-align: bottom;
+
+}
